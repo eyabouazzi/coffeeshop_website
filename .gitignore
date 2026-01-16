@@ -1,0 +1,49 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+/backend/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# Environment variables (hide from git but keep locally)
+.env
+.env.local
+.env.production
+.env.local.example
+.env.development.local
+.env.test.local
+.env.development
+.env.production.local
+/backend/.env
+/backend/.env.local
+/backend/.env.development.local
+/backend/.env.test.local
+/backend/.env.production.local
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# deployment (hide sensitive files only)
+.deploy/*.pem
+.deploy/*.key
+.deploy/.env*
